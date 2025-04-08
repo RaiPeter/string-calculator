@@ -1,6 +1,6 @@
 # String Calculator
 
-This application is a simple string calculator.
+This application is a simple string calculator developed using TDD.
 
 ## How to Run
 
