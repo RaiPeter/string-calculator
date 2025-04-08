@@ -1,4 +1,4 @@
-function calculator(number) {
+function add(number) {
   if (number === "" || number === null) return 0;
   if (parseInt(number) && number.length === 1) return parseInt(number);
   let sum = 0;
@@ -9,4 +9,4 @@ function calculator(number) {
   return sum;
 }
 
-module.exports = calculator;
+module.exports = add;
