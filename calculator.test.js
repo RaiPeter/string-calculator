@@ -15,4 +15,10 @@ describe("Calculator", () => {
       expect(calculator("2")).toEqual(2);
     });
   });
+
+  describe("multiple values should return the sum of it", () =>{
+    it("should return as 3", () =>{
+        expect(calculator("1,2")).toEqual(3);
+    })
+  })
 });
