@@ -16,9 +16,17 @@ describe("Calculator", () => {
     });
   });
 
-  describe("multiple values should return the sum of it", () =>{
-    it("should return as 3", () =>{
-        expect(calculator("1,2")).toEqual(3);
-    })
-  })
+  describe("comma separator - multiple values should return the sum of it", () => {
+    it("should return as 3", () => {
+      expect(calculator("1,2")).toEqual(3);
+    });
+    it("should return as 6", () => {
+      expect(calculator("1,2,3")).toEqual(6);
+    });
+    it("should return as 10", () => {
+      expect(calculator("1,2,3,4")).toEqual(10);
+    });
+  });
+
+  
 });
