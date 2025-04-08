@@ -13,3 +13,9 @@ This application is a simple string calculator.
     ```
     npm jest
     ```
+ ## Test Results
+
+Below is a screenshot of the test results:
+
+![Test Results](https://github.com/user-attachments/assets/d6f1ebb5-1a3f-44c2-8cdd-e533c713a5e9)
+
