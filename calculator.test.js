@@ -45,4 +45,13 @@ describe("Calculator", () => {
       expect(add("//&\n1&2&3&4&5")).toEqual(15);
     });
   });
+
+  describe("no negative numbers allowed", () => {
+    it("should throw an error", () => {
+      expect(() => add("-1")).toThrow("negative numbers not allowed -1");
+    });
+    it("should throw an error", () => {
+      expect(() => add("-1,2,-3")).toThrow("negative numbers not allowed -1, -3");
+    });
+  });
 });
