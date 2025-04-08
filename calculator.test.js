@@ -33,13 +33,16 @@ describe("Calculator", () => {
       expect(add("1\n2,3")).toEqual(6);
     });
     it("should return as 25", () => {
-        expect(add("1\n2,3\n4\n5\n6,7")).toEqual(28);
-      });
+      expect(add("1\n2,3\n4\n5\n6,7")).toEqual(28);
+    });
   });
 
   describe("different delimeters", () => {
     it("should return as 3", () => {
-        expect(add("//;\n1;2")).toEqual(3);
-    })
-  })
+      expect(add("//;\n1;2")).toEqual(3);
+    });
+    it("should return as 3", () => {
+      expect(add("//&\n1&2&3&4&5")).toEqual(15);
+    });
+  });
 });
