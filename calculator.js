@@ -1,6 +1,5 @@
 function add(number) {
-  if (number === "" || number === null) return 0;
-  if (parseInt(number) && number.length === 1) return parseInt(number);
+  if(!number) return 0;
 
   let delimeter = /,|\n/g;
   let numbers = number;
