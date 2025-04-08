@@ -27,4 +27,10 @@ describe("Calculator", () => {
       expect(add("1,2,3,4")).toEqual(10);
     });
   });
+
+  describe("newline separator", () => {
+    it("should return as 3", () => {
+      expect(add("1\n2,3")).toEqual(6);
+    });
+  });
 });
