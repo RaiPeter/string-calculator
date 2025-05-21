@@ -35,6 +35,12 @@ describe("Calculator", () => {
     });
   });
 
+  describe("for random input", () => {
+    it("random string", () => {
+      expect(() => add("1,34,we,3,f")).toThrow("we, f is not a number");
+    })
+  })
+
   function logger(operands, sum){
     it(`should return "${operands.replace(/\n/g,'\\n')}" as ${sum}`, () => {
       expect(add(operands)).toEqual(sum);
